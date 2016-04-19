@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
 # Get BCMDHD configs
 $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
+# BSOD Killer
+PRODUCT_COPY_FILES += \
+    device/lge/ls990/prebuilt/etc/init.d/89bsod:system/etc/init.d/89bsod
+
 # Dalvik-Hack
 PRODUCT_COPY_FILES += \
     device/lge/ls990/prebuilt/etc/init.d/01dalvik:system/etc/init.d/01dalvik
