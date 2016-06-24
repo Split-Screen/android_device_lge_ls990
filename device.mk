@@ -49,5 +49,9 @@ $(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bc
 PRODUCT_COPY_FILES += \
     device/lge/ls990/prebuilt/etc/init.d/01dalvik:system/etc/init.d/01dalvik
 
+# Assertive Display
+PRODUCT_COPY_FILES += \
+    device/lge/ls990/prebuilt/etc/ad_calib.cfg:system/etc/ad_calib.cfg
+
 # common g3
 $(call inherit-product, device/lge/g3-common/g3.mk)
